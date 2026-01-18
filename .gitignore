@@ -1,0 +1,95 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+*.tgz
+*.tar.gz
+*.ini
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Environment variables
+.env
+!.env.example
+
+# Build / Distribution
+dist/
+build/
+site/
+
+# Logs / Reports
+*.log
+*.log.*
+*.logfire
+*.coverage/
+log/
+logs/
+
+# Caches
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.gradio/
+.history/
+temp/
+tmp/
+
+# IDE / Editor Files
+.idea/
+.vscode/
+.claude
+*.swp
+*.swo
+*~
+
+# Framework-specific files
+local_neo4jWorkDir/
+neo4jWorkDir/
+
+# Data & Storage
+inputs/
+rag_storage/
+examples/input/
+examples/output/
+data/run_data/
+data/llm_graphs/
+*.json
+!data/expert_graphs/*.json
+!config/*.json
+!**/.gitkeep
+
+# Evaluation results
+evaluation/results/
+evaluation/*.csv
+!evaluation/.gitkeep
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+TODO.md
+ignore_this.txt
+*.ignore.*
+*.bak
+*.backup
+*.tmp
+
+# Project-specific files
+dickens*/
+book.txt
+lightrag-dev/
+gui/
+superpowers/
+
+# unit-test files
+test_*
+tests/

@@ -1,0 +1,54 @@
+# DOKE-RAG Dependencies
+# Python 3.9+
+
+# Core dependencies
+numpy==1.24.3
+pandas==2.0.3
+aiofiles==23.2.1
+
+# LLM providers
+openai==1.3.5
+ollama==0.1.6
+aliyun-python-sdk-core==2.14.0
+aliyun-python-sdk-dashscope==1.14.0
+
+# Embedding
+tiktoken==0.5.1
+sentence-transformers==2.2.2
+
+# Graph storage
+networkx==3.1
+neo4j==5.14.0
+psycopg2-binary==2.9.9
+pymongo==4.6.0
+redis==5.0.1
+
+# Vector storage
+chromadb==0.4.18
+qdrant-client==1.7.0
+faiss-cpu==1.7.4
+
+# Evaluation
+scipy==1.11.3
+scikit-learn==1.3.1
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+requests==2.31.0
+httpx==0.25.1
+tenacity==8.2.3
+
+# Async support
+asyncio==3.4.3
+
+# Logging
+colorlog==6.8.0
+
+# Data processing
+openpyxl==3.1.2
+xlsxwriter==3.1.9
+
+# Visualization (optional)
+matplotlib==3.8.0
+seaborn==0.13.0
