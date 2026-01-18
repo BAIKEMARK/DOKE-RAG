@@ -50,6 +50,10 @@ tmp/
 *.swo
 *~
 
+# Git Worktrees
+worktrees/
+.worktrees/
+
 # Framework-specific files
 local_neo4jWorkDir/
 neo4jWorkDir/
