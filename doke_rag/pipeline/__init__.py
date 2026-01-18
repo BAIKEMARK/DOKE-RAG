@@ -9,6 +9,8 @@ from doke_rag.pipeline.audio_processor import (
     transcribe_audio
 )
 
+from doke_rag.pipeline.pdf_parser import PDFParser
+
 from doke_rag.pipeline.utils import (
     # 异常类
     PipelineError,
@@ -39,6 +41,9 @@ __all__ = [
     # 音频处理器
     "AudioProcessor",
     "transcribe_audio",
+
+    # PDF 解析器
+    "PDFParser",
 
     # 异常类
     "PipelineError",

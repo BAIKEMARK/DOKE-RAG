@@ -94,6 +94,6 @@ lightrag-dev/
 gui/
 superpowers/
 
-# unit-test files
-test_*
-tests/
+# unit-test files (commented out to allow pipeline tests)
+# test_*
+# tests/
