@@ -250,7 +250,6 @@ PIPELINE_MODE=tolerant  # 跳过错误继续处理
 ## 相关文档
 
 - [详细安装指南](PADDLEOCR_INSTALLATION.md)
-- [实现总结](pdf_parser_implementation_summary.md)
 - [设计文档](../plans/2025-01-18-multimodal-pipeline-design.md)
 - [使用示例](../examples/pdf_parser_example.py)
 
