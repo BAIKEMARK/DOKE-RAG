@@ -42,6 +42,9 @@ tenacity==8.2.3
 # Async support
 asyncio==3.4.3
 
+# Audio Processing (Whisper API)
+# Note: openai is already included above, ensure version >= 1.0.0
+
 # Logging
 colorlog==6.8.0
 
