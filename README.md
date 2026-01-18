@@ -21,9 +21,9 @@ DOKE-RAG is a novel framework designed for deep vertical domains that integrates
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/DOKE-RAG.git
+git clone https://github.com/BAIKEMARK/DOKE-RAG.git
 cd DOKE-RAG
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ### Configuration
@@ -34,6 +34,8 @@ cp .env.example .env
 ```
 
 ### Basic Usage
+
+#### Core Framework (Graph RAG)
 
 ```python
 import asyncio
@@ -55,10 +57,57 @@ async def main():
 asyncio.run(main())
 ```
 
+#### Multimodal Processing
+
+**Audio Transcription (Whisper API)**
+
+```python
+import asyncio
+from doke_rag.pipeline import AudioProcessor
+
+async def main():
+    processor = AudioProcessor()
+
+    # Transcribe audio to Markdown
+    result = await processor.transcribe(
+        audio_path="lecture.mp3",
+        output_dir="data/processed/",
+        language="zh"
+    )
+
+    print(f"Markdown: {result['markdown_path']}")
+
+asyncio.run(main())
+```
+
+**PDF Parsing (PaddleOCR-VL)**
+
+```python
+import asyncio
+from doke_rag.pipeline import PDFParser
+
+async def main():
+    parser = PDFParser()
+
+    # Parse PDF to Markdown
+    result = await parser.parse_pdf(
+        pdf_path="document.pdf",
+        output_dir="data/processed/",
+        extract_images=True
+    )
+
+    print(f"Markdown: {result['markdown_path']}")
+
+asyncio.run(main())
+```
+
 ## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md) - System design and components
 - [Usage Guide](docs/USAGE.md) - Detailed usage instructions
+- [Audio Processor Guide](docs/audio_processor_readme.md) - Whisper API integration
+- [PDF Parser Guide](docs/PDF_PARSER_QUICKSTART.md) - PaddleOCR-VL integration
+- [PaddleOCR Installation](docs/PADDLEOCR_INSTALLATION.md) - Setup instructions
 
 ## Project Structure
 

@@ -9,7 +9,13 @@ from doke_rag.pipeline.audio_processor import (
     transcribe_audio
 )
 
-from doke_rag.pipeline.pdf_parser import PDFParser
+# PDF parser requires PaddleOCR (optional dependency)
+try:
+    from doke_rag.pipeline.pdf_parser import PDFParser
+    _pdf_parser_available = True
+except ImportError:
+    _pdf_parser_available = False
+    PDFParser = None
 
 from doke_rag.pipeline.utils import (
     # 异常类
